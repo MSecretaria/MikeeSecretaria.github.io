@@ -1,0 +1,564 @@
+<style type="text/css">
+    #mainframe{
+        background-color: lightgrey;
+        width: 1200;
+        height: 700;
+        top: 70;
+        left: 100;
+        position: absolute;
+        z-index: 0;
+    }
+    #mainbuilding{
+        background-color: beige;
+        width: 300;
+        height: 700;
+        top: 0;
+        left: 400;
+        position: absolute;
+        z-index: 1;
+    }
+    #pillar{
+        background-color: beige;
+        width: 300;
+        height: 350;
+        top: 50;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+    #window{
+        background-color: rgb(154, 195, 241);
+        width: 80;
+        height: 300;
+        top: 80;
+        right: 10;
+        position: absolute;
+        z-index: 2;
+    }
+    #window1{
+        background-color: rgb(154, 195, 241);
+        width: 80;
+        height: 300;
+        top: 80;
+        left: 10;
+        position: absolute;
+        z-index: 2;
+    }
+    #window2{
+        background-color:rgb(154, 195, 241);
+        width: 80;
+        height: 300;
+        top: 80;
+        left: 110;
+        position: absolute;
+        z-index: 2;
+    }
+    #window3{
+        background-color: beige;
+        width: 300;
+        height:20;
+        top: 270;
+        left: 0;
+        position: absolute;
+        z-index: 3;
+    }
+    #window4{
+        background-color: beige;
+        width: 300;
+        height:20;
+        top: 160;
+        left: 0;
+        position: absolute;
+        z-index: 3;
+    }
+
+    #secondpillar{
+        background-color: rgb(167, 79, 79);
+        width: 200;
+        height: 160;
+        top: 500;
+        right: 50;
+        position: absolute;
+        z-index: 1;
+    }
+     #thirdpillar{
+        background-color: rgb(199, 191, 191);
+        width: 200;
+        height: 150;
+        top: 550;
+        right: 50;
+        position: absolute;
+        z-index: 1;
+    }
+    #fourthpillar{
+        background-color: rgb(57, 168, 126);
+        width: 300;
+        height: 50;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+    }
+    #fifthpillar{
+        background-color: rgb(96, 102, 99);
+        width: 130;
+        height: 150;
+        bottom: 0;
+        right: 85;
+        position: absolute;
+        z-index: 2;
+    }
+    #firstfloor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 520;
+        left: 300;
+        position: absolute;
+        z-index: 1;
+    }
+     #Rdoor1{
+        background-color: white;
+        width: 70;
+        height: 100;
+        bottom: 50;
+        left: 630;
+        position: absolute;
+        z-index: 2;
+    }
+      #Rdoorknob1{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        left: 690;
+        position: absolute;
+        z-index: 3;
+    }
+     #Rdoor2{
+        background-color: white;
+        width: 70;
+        height: 100;
+        bottom: 50;
+        left: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Rdoorknob2{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        left: 300;
+        position: absolute;
+        z-index: 3;
+    }
+    #Rdoor3{
+        background-color: white;
+        width: 70;
+        height: 100;
+        top: 280;
+        left: 630;
+        position: absolute;
+        z-index: 2;
+    }
+    #Rdoorknob3{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        left: 690;
+        position: absolute;
+        z-index: 3;
+    }
+    #Rdoor4{
+        background-color: white;
+        width: 70;
+        height: 100;
+        top: 280;
+        left: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Rdoorknob4{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        left: 300;
+        position: absolute;
+        z-index: 3;
+    }
+    #Rdoor5{
+        background-color: white;
+        width: 70;
+        height: 100;
+        top: 30;
+        left: 630;
+        position: absolute;
+        z-index: 2;
+    }
+    #Rdoorknob5{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        left: 690;
+        position: absolute;
+        z-index: 3;
+    }
+    #Rdoor6{
+        background-color: white;
+        width: 70;
+        height: 100;
+        top: 30;
+        left: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Rdoorknob6{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        left: 300;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor1{
+        background-color: white;
+        width: 40;
+        height: 100;
+        bottom: 50;
+        right: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob1{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        right:300;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor2_3{
+        background-color: white;
+        width: 90;
+        height: 100;
+        bottom: 50;
+        right: 450;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob2{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        right:470;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoorknob3{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        right:510;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor4{
+        background-color: white;
+        width: 40;
+        height: 100;
+        bottom: 50;
+        right: 660;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob4{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 600;
+        right:690;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor5{
+        background-color: white;
+        width: 40;
+        height: 100;
+        top: 280;
+        right: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob5{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        right:300;
+        position: absolute;
+        z-index: 3;
+    
+    }
+    #Ldoor6_7{
+        background-color: white;
+        width: 90;
+        height: 100;
+        top: 280;
+        right: 450;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob6{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        right:470;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoorknob7{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        right:510;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor8{
+        background-color: white;
+        width: 40;
+        height: 100;
+        top: 280;
+        right: 660;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob8{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 330;
+        right:690;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor9{
+        background-color: white;
+        width: 40;
+        height: 100;
+        top: 30;
+        right: 300;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob9{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        right:300;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor10_11{
+        background-color: white;
+        width: 90;
+        height: 100;
+        top: 30;
+        right: 450;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob10{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        right:470;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoorknob11{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        right:510;
+        position: absolute;
+        z-index: 3;
+    }
+    #Ldoor12{
+        background-color: white;
+        width: 40;
+        height: 100;
+        top: 30;
+        right: 660;
+        position: absolute;
+        z-index: 2;
+    }
+    #Ldoorknob12{
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        top: 80;
+        right:690;
+        position: absolute;
+        z-index: 3;
+    }
+    #secondfloor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 250;
+        left: 300;
+        position: absolute;
+        z-index: 1;
+    }
+    #thirdfloor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 0;
+        left: 300;
+        position: absolute;
+        z-index: 1;
+    }#leftpillar{
+        background-color: beige;
+        width: 100;
+        height: 350;
+        top: 50;
+        left: 200;
+        position: absolute;
+        z-index: 1;
+    }
+    #first_floor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 520;
+        right: 300;
+        position: absolute;
+        z-index: 1;
+    }
+    #label1{
+        background-color: lightgrey;
+        width: 30;
+        height: 700;
+        top: 0;
+        right: 480;
+        position: absolute;
+        z-index: 3;
+        }
+    #second_floor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 250;
+        right: 300;
+        position: absolute;
+        z-index: 1;
+    }
+    #third_floor{
+        background-color: brown;
+        width: 400;
+        height: 130;
+        top: 0;
+        right: 300;
+        position: absolute;
+        z-index: 1;
+    }
+    
+
+</style>
+<div id="mainframe">
+<div id="mainbuilding">
+
+    <div id="Rightpillar"></div>
+    <div id="firstfloor"></div>
+    <div id="secondfloor"></div>
+    <div id="thirdfloor"></div>
+    <div id="secondpillar"></div>
+    <div id="thirdpillar"></div>
+    <div id="fourthpillar"></div>
+    <div id="fifthpillar"></div>
+
+    
+   
+    
+    <div id="leftpillar"></div>
+    <div id="first_floor"></div>
+    <div id="second_floor"></div>
+    <div id="third_floor"></div>
+
+    <div id="label1"></div>
+    <div id="window"></div>
+    <div id="window1"></div>
+    <div id="window2"></div>
+    <div id="window3"></div>
+    <div id="window4"></div>
+
+    <div id="Rdoor1"></div>
+    <div id="Rdoorknob1"></div>
+    <div id="Rdoor2"></div>
+    <div id="Rdoorknob2"></div>
+    <div id="Rdoor3"></div>
+    <div id="Rdoorknob3"></div>
+    <div id="Rdoor4"></div>
+    <div id="Rdoorknob4"></div>
+    <div id="Rdoor5"></div>
+    <div id="Rdoorknob5"></div>
+    <div id="Rdoor6"></div>
+    <div id="Rdoorknob6"></div>
+   
+
+    <div id="Ldoor1"></div>
+    <div id="Ldoorknob1"></div>
+    <div id="Ldoor2_3"></div>
+    <div id="Ldoorknob2"></div>
+    <div id="Ldoorknob3"></div>
+    <div id="Ldoor4"></div>
+    <div id="Ldoorknob4"></div>
+    <div id="Ldoor5"></div>
+    <div id="Ldoorknob5"></div>
+    <div id="Ldoor6_7"></div>
+    <div id="Ldoorknob6"></div>
+    <div id="Ldoorknob7"></div>
+    <div id="Ldoor8"></div>
+    <div id="Ldoorknob8"></div>
+    <div id="Ldoor9"></div>
+    <div id="Ldoorknob9"></div>
+    <div id="Ldoor10_11"></div>
+    <div id="Ldoorknob10"></div>
+    <div id="Ldoorknob11"></div>
+    <div id="Ldoor12"></div>
+    <div id="Ldoorknob12"></div>
+</div>
+</div>
